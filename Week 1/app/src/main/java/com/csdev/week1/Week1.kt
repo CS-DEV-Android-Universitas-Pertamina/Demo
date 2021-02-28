@@ -51,7 +51,7 @@ class Week1 {
     val intArray = arrayOf<Int>(1, 3, 5, 7)  // [1, 3, 5, 7]
     fun example3() {
         intArray[2] = 11                             // [1, 3, 11, 7]
-        Log.v("result", "$intArray[2]")
+        Log.v("result", "${intArray[2].toString()}")
         // result : 11
     }
 
@@ -163,7 +163,7 @@ class Week1 {
             5 + 5 -> print("the value is 10")
             10 + 10 -> print("the value is 20")
         }
-        
+
     }
     //Looping
     //Data Classes
