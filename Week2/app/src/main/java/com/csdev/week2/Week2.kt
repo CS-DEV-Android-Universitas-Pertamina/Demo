@@ -12,7 +12,7 @@ class Week2 {
         }
     }
 
-    fun noLoop(){
+    fun exampleInfinite1noLoop(){
         Log.d("result : ","Hello World")
         Log.d("result : ","Hello World")
         Log.d("result : ","Hello World")
