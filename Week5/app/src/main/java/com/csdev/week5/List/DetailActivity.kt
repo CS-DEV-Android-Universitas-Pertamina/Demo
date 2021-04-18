@@ -19,11 +19,13 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail)
+        binding = ActivityDetailBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val hero = intent.getParcelableExtra<Hero2>("HERO_OBJECT") as Hero2
-        image = binding.imgPhoto
         name = binding.txtName
         desc = binding.txtDescription
+        image = binding.imgPhoto
+
 
         Glide.with(this)
             .load(hero.photo)

@@ -39,9 +39,10 @@ class ActivityRecyclerView : AppCompatActivity() {
     }
 
     private fun showRecyclerList() {
-        binding.rvHeroes.layoutManager = LinearLayoutManager(this)
-        //binding.rvHeroes.layoutManager = GridLayoutManager(this, 2)
+
         val listHeroAdapter = ListHeroAdapter(list)
+        //binding.rvHeroes.layoutManager = GridLayoutManager(this, 2)
         binding.rvHeroes.adapter = listHeroAdapter
+        binding.rvHeroes.layoutManager = LinearLayoutManager(this)
     }
 }
