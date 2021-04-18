@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_team_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Team A"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_team_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Team B"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_time"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_team_a"
+        app:layout_constraintStart_toStartOf="@+id/tv_team_a"
+        app:layout_constraintTop_toBottomOf="@+id/tv_team_a" />
+
+    <TextView
+        android:id="@+id/score_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_team_b"
+        app:layout_constraintStart_toStartOf="@+id/tv_team_b"
+        app:layout_constraintTop_toBottomOf="@+id/tv_team_b" />
+
+    <Button
+        android:id="@+id/btn_point_3_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="+3 Point"
+        app:layout_constraintEnd_toEndOf="@+id/score_a"
+        app:layout_constraintStart_toStartOf="@+id/score_a"
+        app:layout_constraintTop_toBottomOf="@+id/score_a" />
+
+    <Button
+        android:id="@+id/btn_point_3_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="+3 Point"
+        app:layout_constraintEnd_toEndOf="@+id/score_b"
+        app:layout_constraintStart_toStartOf="@+id/score_b"
+        app:layout_constraintTop_toBottomOf="@+id/score_b" />
+
+    <Button
+        android:id="@+id/btn_point_2_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 Point"
+        app:layout_constraintEnd_toEndOf="@+id/btn_point_3_a"
+        app:layout_constraintStart_toStartOf="@+id/btn_point_3_a"
+        app:layout_constraintTop_toBottomOf="@+id/btn_point_3_a" />
+
+    <Button
+        android:id="@+id/btn_point_2_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 Point"
+        app:layout_constraintEnd_toEndOf="@+id/btn_point_3_b"
+        app:layout_constraintStart_toStartOf="@+id/btn_point_3_b"
+        app:layout_constraintTop_toBottomOf="@+id/btn_point_3_b" />
+
+    <Button
+        android:id="@+id/btn_free_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        app:layout_constraintEnd_toEndOf="@+id/btn_point_2_a"
+        app:layout_constraintStart_toStartOf="@+id/btn_point_2_a"
+        app:layout_constraintTop_toBottomOf="@+id/btn_point_2_a" />
+
+    <Button
+        android:id="@+id/btn_free_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        app:layout_constraintEnd_toEndOf="@+id/btn_point_2_b"
+        app:layout_constraintStart_toStartOf="@+id/btn_point_2_b"
+        app:layout_constraintTop_toBottomOf="@+id/btn_point_2_b" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TIME"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_time_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="@+id/tv_time"
+        app:layout_constraintStart_toStartOf="@+id/tv_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="@+id/reset"
+        app:layout_constraintStart_toStartOf="@+id/reset" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
+        app:layout_constraintEnd_toEndOf="@+id/btn_start"
+        app:layout_constraintStart_toStartOf="@+id/btn_start" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
